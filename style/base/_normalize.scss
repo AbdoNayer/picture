@@ -16,7 +16,6 @@ body {
   overflow-y: hidden;
   font-family: 'Tajawal', sans-serif;
   font-weight: 200 !important;
-  height: 1000000px;
 }
 
 a, button, input, textarea, i{
@@ -96,24 +95,6 @@ button{
   color: $white;
 }
 
-// Classes Colors
-
-.color-default{
-  color: $main !important;
-}
-
-.bg-default{
-  background-color: $main !important;
-}
-
-.color-black{
-  color: $black !important;
-}
-
-.color-white{
-  color: $white !important;
-}
-
 // selection
 
 ::selection {
@@ -167,7 +148,7 @@ input, textarea{
 
 input, textarea {
   &:focus{
-    border-color: $white !important;
+    border-color: $main !important;
   }
 }
 
@@ -184,6 +165,21 @@ input, textarea {
   width: 100%;
   z-index: 998;
   background-color: rgba(0,0,0,0.6);              
+}
+
+.overlay-section{
+  @include positionItem(absolute, 0px, initial, 0, initial, initial);
+  background-color: #181F2A;
+  opacity: 0.64;
+}
+
+// BG IMAGE
+
+.bg-img{
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 // Loading Page

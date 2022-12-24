@@ -33,7 +33,7 @@
     }
 }
 
-// Header
+// Section Header
 header{
     @include positionItem(fixed, 0, initial, 0, initial, initial);
     @include transition(0.5s);
@@ -93,19 +93,11 @@ header{
     }
 }
 
-// Content View
-.content-view{
+// Section View
+.section-view{
     background-image: url("http://picture.com.sa/wp-content/uploads/2020/10/622055.jpg");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 100vh;
-    .over-lay{
-        @include positionItem(absolute, 0px, initial, 0, initial, initial);
-        background-color: #181F2A;
-        opacity: 0.64;
-    }
     .over-section{
         .logo-section{
             img{
@@ -135,3 +127,48 @@ header{
         }
     }
 }
+
+// Section About
+.section-about{
+
+}
+
+// Section Story
+.section-story{
+    .bg-content{
+        background-image: url("http://picture.com.sa/wp-content/uploads/2020/08/CTA-bg-1.jpg");
+    }
+
+}
+
+// Section Marketing Solutions
+.section-marketing{
+    
+}
+
+// Section Event Management
+.section-event{
+    .bg-content{
+        background-image: url("http://picture.com.sa/wp-content/uploads/2020/10/danny-howe-bn-D2bCvpik-unsplash-1.jpg");
+    }
+}
+
+// Section Advertising Solutions
+.section-advertising{
+
+}
+
+// Section Our Clients
+.section-clients{
+
+}
+
+
+// Section Contact
+.section-contact{
+
+}
+
+
+
+
