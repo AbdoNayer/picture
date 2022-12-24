@@ -1,0 +1,137 @@
+// Click Nav
+.click-nav {
+    @include positionItem(fixed, initial, 0, initial, 0, initial);
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    width: 40px;
+    justify-content: center;
+    background-color: $white;
+    width: 60px;
+    height: 60px;
+    border-radius: 0 20px 0 0;
+    .handle {
+      background: $main;
+      height: 1px;
+      width: 40px;
+      margin: 0.32em auto;
+      transition: all 350ms cubic-bezier(0.28, 0.55, 0.385, 1.65);
+      transition-timing-function: cubic-bezier(0.28, 0.55, 0.385, 1.65);
+    }
+    .closed {
+      transform: rotate(45deg);
+      width: 40px;
+      position: relative;
+      top: -5px;
+        &:nth-of-type(2) {
+            transform: rotate(-45deg);
+        }
+        &:nth-of-type(3) {
+            display: none;
+        }
+    }
+}
+
+// Header
+header{
+    @include positionItem(fixed, 0, initial, 0, initial, initial);
+    @include transition(0.5s);
+    z-index: 999;
+    width: 100%;
+    padding: 40px 0;
+    .drop-down{
+        & > {
+            a{
+                i{
+                    font-size: 13px
+                }
+            }
+        }
+        ul{
+            @include positionItem(absolute, 30px, initial, 0, initial, initial);
+            background-color: $white;
+            width: 240px;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(0.5s);
+            li{
+                a{
+                    padding: 0.9em 1em;
+                    display: block;
+                    border: .5px solid #eaeaea;
+                }
+                &:last-child{
+                    a{
+                        border: 0;
+                    }
+                }
+            }
+        }
+        &:hover {
+            ul{
+                opacity: 1;
+                visibility: initial;
+            }
+        }
+    }
+    &.header-fixed{
+        background-color: $second;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        animation: slideDown 0.7s;
+    }
+    // Slide Down
+    @keyframes slideDown {
+        0%{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0%);   
+        }
+    }
+}
+
+// Content View
+.content-view{
+    background-image: url("http://picture.com.sa/wp-content/uploads/2020/10/622055.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    .over-lay{
+        @include positionItem(absolute, 0px, initial, 0, initial, initial);
+        background-color: #181F2A;
+        opacity: 0.64;
+    }
+    .over-section{
+        .logo-section{
+            img{
+                max-width: 250px;
+            }
+            h1{
+                font-size: 48px;
+                font-weight: 500;
+            }
+        }
+        ul{
+            li{
+                font-size: 25px;
+                &::after{
+                    content: "";
+                    @include positionItem(absolute, 50%, initial, initial, 0px, translateY(-50%));
+                    background-color: $white;
+                    height: 20px;
+                    width: 1px;
+                }
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

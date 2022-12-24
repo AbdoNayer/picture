@@ -1,0 +1,249 @@
+// Font Import Cdn
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;500;700&display=swap');
+
+// Local Style Page
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 200 !important;
+  height: 1000000px;
+}
+
+a, button, input, textarea, i{
+  @include transition(0.5s);
+}
+
+img{
+  object-fit: cover;
+}
+
+a{
+  text-decoration: none !important;
+  cursor: pointer;
+  display: inline-block;
+  &:hover, &:focus{
+    color: $main !important
+  }
+}
+
+i{
+  vertical-align: middle;
+  &:hover, &:focus{
+    color: $main
+  }
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 10px 0;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Style Scroll Site
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: $main;
+  border: 1px solid $main
+}
+
+::-webkit-scrollbar-thumb {
+  background: $main;
+}
+
+// Style Button Site
+
+button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-button{
+  border-radius: 3px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  &:hover{
+    transform: scale(0.9);
+  }
+}
+
+.btn-default{
+  border: 1px solid $main !important;
+  background-color: $main;
+  color: $white;
+}
+
+// Classes Colors
+
+.color-default{
+  color: $main !important;
+}
+
+.bg-default{
+  background-color: $main !important;
+}
+
+.color-black{
+  color: $black !important;
+}
+
+.color-white{
+  color: $white !important;
+}
+
+// selection
+
+::selection {
+  background: $main;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $main;
+  color: $white;
+}
+
+// Style Form Validation
+
+.style-form{
+  border: 1px solid $white;
+  color: $white;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  @include transition(0.5s);
+}
+
+input{
+  height: 50px;
+  @extend .style-form;
+}
+
+textarea{
+  @extend .style-form;
+  resize: none;
+  min-height: 210px;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder{
+  color: $main;
+  opacity: 1;
+}
+
+input, textarea{
+  &:focus::-webkit-input-placeholder{
+    opacity: 0;
+  }
+}
+
+input, textarea {
+  &:focus{
+    border-color: $white !important;
+  }
+}
+
+// Back Translate
+.back{
+  transform: translate(0) !important;
+}
+
+// OverLay
+.overlay{
+  @include positionItem(fixed, 0, initial, initial, 0, translateX(100%));
+  @include transition(0.3s);
+  height: 100%;
+  width: 100%;
+  z-index: 998;
+  background-color: rgba(0,0,0,0.6);              
+}
+
+// Loading Page
+.loader{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  z-index: 99999;
+  .loading{
+    position: relative;
+    top: -50px;
+    span {
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      animation: speed 2s infinite ease-in-out;
+      &:nth-child(1) {
+        background: $main;
+        animation-delay: 1.5s;
+      }
+      &:nth-child(2) {
+        background: $black;
+        animation-delay: 1s;
+      }
+      &:nth-child(3) {
+        background: $main;
+        animation-delay: 0.5s;
+      }
+      &:nth-child(4) {
+        background: $black;
+      }
+    }
+  }
+}
+
+@keyframes speed {
+  0% {
+    transform: translate(0%);
+    border-radius: 50%;
+  }
+  25% {
+    transform: translate(150%) scale(0.5);
+    border-radius: 0%;
+  }
+
+  50% {
+    transform: translate(150%, 150%);
+    border-radius: 50%;
+  }
+  75% {
+    transform: translate(0, 150%) scale(0.5);
+    border-radius: 0%;
+  }
+} 
+
