@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="./style/global.css">
     
 </head>
-<body>
+<body class="Home">
 
     <!-- Section Loading Page -->
     <div class="loader">
@@ -56,22 +56,22 @@
     <header>
         <div class="container">
             <ul class="d-flex justify-content-center align-items-center">
-                <li><a href="" class="text-white mx-4" id="">الرئيسية</a></li>
-                <li><a href="" class="text-white mx-4" id="">من نحن</a></li>
-                <li><a href="" class="text-white mx-4" id="">قصتنا</a></li>
+                <li><a href="" data-value="Home" class="text-white mx-4" id="">الرئيسية</a></li>
+                <li><a href="" data-value="About" class="text-white mx-4" id="">من نحن</a></li>
+                <li><a href="" data-value="Story" class="text-white mx-4" id="">قصتنا</a></li>
                 <li class="position-relative drop-down">
                     <a href="" class="position-relative text-white mx-4">
                         <span>خدماتنا</span>
                         <i class="fa-solid fa-angle-down mx-2"></i>
                     </a>
                     <ul>
-                        <li><a href="" class="text-dark" id="">الحلول التسويقية</a></li>
-                        <li><a href="" class="text-dark" id="">الدعاية و الإعلان</a></li>
-                        <li><a href="" class="text-dark" id="">ادارة الفعاليات</a></li>
+                        <li><a href="" data-value="Marketing" class="text-dark" id="">الحلول التسويقية</a></li>
+                        <li><a href="" data-value="Event" class="text-dark" id="">الدعاية و الإعلان</a></li>
+                        <li><a href="" data-value="Advertising" class="text-dark" id="">ادارة الفعاليات</a></li>
                     </ul>
                 </li>
-                <li><a href="" class="text-white mx-4" id="">عملائنا</a></li>
-                <li><a href="" class="text-white mx-4" id="">اتصل بنا</a></li>
+                <li><a href="" data-value="Clients" class="text-white mx-4" id="">عملائنا</a></li>
+                <li><a href="" data-value="Contact" class="text-white mx-4" id="">اتصل بنا</a></li>
             </ul>
         </div>
     </header>
@@ -98,14 +98,14 @@
             <div class="row align-items-center">
                 <div class="col-md-6 col-xs-12">
                     <div class="info-head">
-                        <h2>صورة الغد</h2>
+                        <h2 class="position-relative">صورة الغد</h2>
                         <h4>نحن نبني رؤيتك</h4>
                         <p>مؤسسة سعودية نشأت في ضل الرؤية السعودية واقتصادها المزدهر, تحت طموح وطني وتعزير علامة تجارية قادرة على المنافسة محلياً وإقليمياً ودولياً في مجال خصصها.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <div class="img-about">
-                        <img src="https://picture.com.sa/wp-content/uploads/2020/08/about-img-1.jpg" alt="">
+                    <div class="img-about position-relative">
+                        <img class="position-relative" src="https://picture.com.sa/wp-content/uploads/2020/08/about-img-1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -119,22 +119,22 @@
             <div class="overlay-section w-100 h-100"></div>
             <div class="container">
                 <div class="position-relative info-head text-center py-5">
-                    <h2 class="text-white">قصتنا</h2>
-                    <p class="text-white">بعد دراسة سوقية متخصصة لقطاعات الأعمال المتنوعة ومعرفة حاجة هذه القطاعات من خدمات متنوعة تسويقية. إعلانية ولوجستية. كانت ولادة “صورة الفد” لتلبي هذه الاحتياجات من خلال تقديم خدمات وحلول تخصصية تعمل بالتوازي تحت قيادة وإدارة فريق عمل مؤهل وذو خبرة وكفاءة عالية.</p>
-                    <a href="">
-                        <span>اطلب خدمة</span>
-                        <i class="fa-solid fa-arrow-left-long"></i>
+                    <h2 class="text-white position-relative centering">قصتنا</h2>
+                    <p class="text-white m-auto">بعد دراسة سوقية متخصصة لقطاعات الأعمال المتنوعة ومعرفة حاجة هذه القطاعات من خدمات متنوعة تسويقية. إعلانية ولوجستية. كانت ولادة “صورة الفد” لتلبي هذه الاحتياجات من خلال تقديم خدمات وحلول تخصصية تعمل بالتوازي تحت قيادة وإدارة فريق عمل مؤهل وذو خبرة وكفاءة عالية.</p>
+                    <a href="" class="btn-button btn-default">
+                        <span class="mx-4">اطلب خدمة</span>
+                        <i class="fa-solid fa-arrow-left-long mx-4"></i>
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container py-5">
             <div class="row">
                 <div class="col-md-3 col-xs-12">
                     <div class="info-about">
                         <span><i class="fa-solid fa-eye"></i></span>
-                        <h4></h4>
+                        <h4>رؤيتنا​</h4>
                         <p>أن نكون الخيار التسويقي والإعلاني و اللوجيستي الأول بالمنطقة بحلول 2023.</p>
                     </div>
                 </div>
@@ -168,8 +168,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 col-xs-12">
-                    <div class="img-about">
-                        <img src="https://picture.com.sa/wp-content/uploads/2020/10/Marketing-Solutions-AR.jpg" alt="">
+                    <div class="img-about position-relative">
+                        <img class="position-relative" src="https://picture.com.sa/wp-content/uploads/2020/10/Marketing-Solutions-AR.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-12">
@@ -195,9 +195,8 @@
             <div class="overlay-section w-100 h-100"></div>
             <div class="container">
                 <div class="position-relative info-head text-center py-5">
-                    <h2 class="text-white">ادارة الفعاليات</h2>
-                    <p class="text-white">نقدم حلول إدارة الفعاليات بأنواعها من مؤتمرات. معارض, إحتفالات ومهرجانات. وكافة تجمعات الأعمال.</p>
-                    <p class="text-white">يمتد خبرة فريق العمل لعشرات السنوات في مجال إدارة الفعاليات من الفكرة للمحتوى إلى التسويق من ثم التجهيز اللوجستي وصولاً لفعالية تظهر بأبها حله. لتكون منصة رائدة في قطاعها وتثري القطاع الاقتصادي التي تنتمي له.</p>
+                    <h2 class="text-white position-relative centering">ادارة الفعاليات</h2>
+                    <p class="text-white m-auto">يمتد خبرة فريق العمل لعشرات السنوات في مجال إدارة الفعاليات من الفكرة للمحتوى إلى التسويق من ثم التجهيز اللوجستي وصولاً لفعالية تظهر بأبها حله. لتكون منصة رائدة في قطاعها وتثري القطاع الاقتصادي التي تنتمي له.</p>
                 </div>
             </div>
         </div>
@@ -209,35 +208,35 @@
 
         <div class="container">
 
-            <div class="info-head">
-                <h2>حلول الدعاية والإعلان</h2>
-                <p>تنبتكر الحلول الدعاية من مساحات إعلانية مبتكرة, تكس الأثر الإعلاني لدى العملاء. تخصصنا في :</p>
+            <div class="info-head text-center my-5">
+                <h2 class="position-relative centering">حلول الدعاية والإعلان</h2>
+                <p class="m-auto">تنبتكر الحلول الدعاية من مساحات إعلانية مبتكرة, تكس الأثر الإعلاني لدى العملاء. تخصصنا في :</p>
             </div>
 
             <div class="row">
                 <div class="col-md-4">
                     <div class="text-content">
-                        <h4>المحتوى الاعلاني الالكتروني, المرئي. المسموع والمقروء.</h4>
+                        <h5 class="m-0">المحتوى الاعلاني الالكتروني, المرئي. المسموع والمقروء.</h5>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-content">
-                        <h4>إدارة الحملات الإعلانية بتنوع قنواتها.</h4>
+                        <h5 class="m-0">إدارة الحملات الإعلانية بتنوع قنواتها.</h5>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-content">
-                        <h4>الخطة الإعلانية والميزانيات المقترحة لها.</h4>
+                        <h5 class="m-0">الخطة الإعلانية والميزانيات المقترحة لها.</h5>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-content">
-                        <h4>المساحات الإعلانية المبتكرة.</h4>
+                        <h5 class="m-0">المساحات الإعلانية المبتكرة.</h5>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-content">
-                        <h4>المطبوعات والهدايا الدعائية.</h4>
+                        <h5 class="m-0">المطبوعات والهدايا الدعائية.</h5>
                     </div>
                 </div>
             </div>
@@ -251,15 +250,15 @@
 
         <div class="container">
 
-            <div class="info-head">
-                <h2>حلول الدعاية والإعلان</h2>
+            <div class="info-head text-center my-5">
+                <h2 class="position-relative centering">عملائنا</h2>
             </div>
 
             <div class="row">
                 <div class="col-md-6">
                     <div class="block-logo">
-                        <div class="info-head">
-                            <h2>عملائنا من القطاع الخاص</h2>
+                        <div class="info-head text-center">
+                            <h5 class="position-relative centering">عملائنا من القطاع الخاص</h5>
                         </div>
                         <div class="items-logo">
                             <div class="img">
@@ -280,13 +279,49 @@
                             <div class="img">
                                 <img src="https://picture.com.sa/wp-content/uploads/2021/01/clain-1-150x150.jpg" alt="">
                             </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/energyzer-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/osn-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/تولة-عطر-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/clain-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/energyzer-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/osn-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/تولة-عطر-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/clain-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/energyzer-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/osn-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/تولة-عطر-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/clain-1-150x150.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="block-logo">
-                        <div class="info-head">
-                            <h2>عملائنا من القطاع الحكومي</h2>
+                        <div class="info-head text-center">
+                            <h5 class="position-relative centering">عملائنا من القطاع الحكومي</h5>
                         </div>
                         <div class="items-logo">
                             <div class="img">
@@ -294,6 +329,42 @@
                             </div>
                             <div class="img">
                                 <img src="https://picture.com.sa/wp-content/uploads/2020/10/logoArtboard-5-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/energyzer-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/osn-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/تولة-عطر-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/clain-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/energyzer-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/osn-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/تولة-عطر-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/clain-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/energyzer-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/osn-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/تولة-عطر-1-150x150.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img src="https://picture.com.sa/wp-content/uploads/2021/01/clain-1-150x150.jpg" alt="">
                             </div>
                             <div class="img">
                                 <img src="https://picture.com.sa/wp-content/uploads/2021/01/energyzer-150x150.jpg" alt="">
@@ -317,21 +388,21 @@
     </section>
 
     <!-- Section Contact -->
-    <section class="section-contact" id="contact">
+    <section class="section-contact" id="Contact">
 
         <div class="head-contact">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
-                        <div class="calling d-flex align-items-center">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>شارع الامام محمد بن سعود ، الرياض ، المملكة العربية السعودية</span>
+                        <div class="calling d-flex align-items-center p-5">
+                            <i class="fa-solid fa-location-dot text-white"></i>
+                            <span class="text-white mx-2 fs-5">شارع الامام محمد بن سعود ، الرياض ، المملكة العربية السعودية</span>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
-                        <div class="calling d-flex align-items-center">
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:info@picture.com.sa">info@picture.com.sa</a>
+                        <div class="calling d-flex align-items-center p-5">
+                            <i class="fa-solid fa-envelope text-white"></i>
+                            <a href="mailto:info@picture.com.sa" class="text-white mx-2 fs-5">info@picture.com.sa</a>
                         </div>
                     </div>
                 </div>
@@ -340,18 +411,18 @@
 
         <div class="container d-flex flex-column justify-content-center">
 
-            <div class="">
+            <div class="my-5">
 
-                <div class="info-head">
-                    <h2>اتصل بنا</h2>
+                <div class="info-head text-center my-5">
+                    <h2 class="position-relative centering text-white">اتصل بنا</h2>
                 </div>
 
-                <form action="">
+                <form action="" class="my-5">
 
-                    <input type="text" placeholder="الاسم">
-                    <input type="text" placeholder="البريد الالكتروني">
-                    <input type="text" placeholder="الموضوع">
-                    <textarea name="" placeholder="رسالتك"></textarea>
+                    <input type="text" placeholder="الاسم" class="my-2">
+                    <input type="text" placeholder="البريد الالكتروني" class="my-2">
+                    <input type="text" placeholder="الموضوع" class="my-2">
+                    <textarea name="" placeholder="رسالتك" class="my-2"></textarea>
 
                     <button class="btn-button btn-default w-100" type="submit">ارسال</button>
 
@@ -362,7 +433,7 @@
         </div>
 
         <div class="end-section p-4 text-center">
-            <p class="fs-5">جميع الحقوق محفوظة © 2022 picture</p>
+            <p class="fs-5 text-white">جميع الحقوق محفوظة © 2022 picture</p>
         </div>
     </section>
 

@@ -83,12 +83,15 @@ button {
 }
 .btn-button:hover {
   transform: scale(0.9);
+  border: 1px solid #FFF !important;
+  background-color: #FFF !important;
+  color: #00c1be !important;
 }
 
 .btn-default {
   border: 1px solid #00c1be !important;
-  background-color: #00c1be;
-  color: #FFF;
+  background-color: #00c1be !important;
+  color: #FFF !important;
 }
 
 ::-moz-selection {
@@ -308,6 +311,36 @@ input:focus, textarea:focus {
   display: none;
 }
 
+.info-head h2, .info-head h5 {
+  margin-bottom: 40px;
+}
+.info-head h2.centering::after, .info-head h5.centering::after {
+  position: absolute;
+  top: initial;
+  bottom: -15px;
+  right: 0;
+  left: 0;
+  transform: initial;
+  margin: auto;
+}
+.info-head h2::after, .info-head h5::after {
+  content: "";
+  position: absolute;
+  top: initial;
+  bottom: -5px;
+  right: 0;
+  left: initial;
+  transform: initial;
+  margin: auto;
+  width: 80px;
+  height: 3px;
+  background-color: #00c1be;
+}
+.info-head p {
+  max-width: 400px;
+  font-size: 20px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -415,12 +448,187 @@ header.header-fixed {
   display: none;
 }
 
+.section-about {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.section-about .img-about {
+  height: 600px;
+  width: 70%;
+  margin: auto;
+}
+.section-about .img-about::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  bottom: initial;
+  right: initial;
+  left: -50px;
+  transform: initial;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #CBD2DE;
+}
+.section-about .img-about img {
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
 .section-story .bg-content {
   background-image: url("http://picture.com.sa/wp-content/uploads/2020/08/CTA-bg-1.jpg");
+}
+.section-story .info-head p {
+  max-width: 800px;
+}
+.section-story .info-head .btn-button {
+  width: 250px;
+  position: relative;
+  top: 80px;
+}
+.section-story .info-about {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  height: 250px;
+}
+.section-story .info-about span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #00c1be;
+  color: #FFF;
+  font-size: 25px;
+  margin: 20px auto;
+}
+
+.section-marketing {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.section-marketing .img-about {
+  height: 600px;
+  width: 70%;
+  margin: auto;
+}
+.section-marketing .img-about::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  bottom: initial;
+  right: initial;
+  left: 50px;
+  transform: initial;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #CBD2DE;
+}
+.section-marketing .img-about img {
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.section-marketing ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-marketing ul li {
+  flex-basis: 50%;
+  margin: 20px 0;
+  font-size: 20px;
 }
 
 .section-event .bg-content {
   background-image: url("http://picture.com.sa/wp-content/uploads/2020/10/danny-howe-bn-D2bCvpik-unsplash-1.jpg");
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-event .info-head p {
+  max-width: 800px;
+}
+.section-event .info-head .btn-button {
+  width: 250px;
+  position: relative;
+  top: 80px;
+}
+
+.section-advertising {
+  background-color: #F3F3F3;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.section-advertising .text-content {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-clients {
+  padding: 50px 0;
+}
+.section-clients .block-logo {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+.section-clients .block-logo .items-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section-clients .block-logo .items-logo .img {
+  flex-basis: 33.3%;
+}
+.section-clients .block-logo .items-logo .img img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.section-contact {
+  background-color: #181F2A;
+  margin-top: 100px;
+}
+.section-contact .head-contact {
+  border-bottom: 1px solid #262D39;
+}
+.section-contact .head-contact i {
+  color: #00c1be !important;
+  vertical-align: middle;
+  font-size: 27px;
+}
+.section-contact .head-contact .container .row .col-md-6:last-child {
+  border-right: 1px solid #262D39;
+}
+.section-contact form {
+  max-width: 700px;
+  margin: auto;
+}
+.section-contact .end-section {
+  border-top: 1px solid #262D39;
 }
 
 @media screen and (max-width: 767px) {
@@ -463,5 +671,12 @@ header.header-fixed {
   }
   .content-view .over-section ul li::after {
     display: none;
+  }
+  .info-head p {
+    max-width: 100%;
+  }
+  .section-about .img-about {
+    width: 100%;
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=global.css.map */

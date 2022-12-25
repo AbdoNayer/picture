@@ -86,13 +86,16 @@ button{
   border-radius: 5px;
   &:hover{
     transform: scale(0.9);
+    border: 1px solid $white !important;
+    background-color: $white !important;
+    color: $main !important;
   }
 }
 
 .btn-default{
   border: 1px solid $main !important;
-  background-color: $main;
-  color: $white;
+  background-color: $main !important;
+  color: $white !important;
 }
 
 // selection
