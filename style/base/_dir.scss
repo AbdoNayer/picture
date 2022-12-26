@@ -1,0 +1,137 @@
+// Dir RTL
+html[dir=rtl] {
+    body{
+        direction: rtl;
+        text-align: right;
+    }
+    // Click Nav
+    .click-nav {
+        left: 0;
+        border-radius: 0 20px 0 0;
+    }
+    // Info Head
+    .info-head {
+        h2, h5{
+            &::after{
+                right: 0;
+            }
+        }
+    }
+    // Section View
+    .section-view{
+        .over-section{
+            ul{
+                li{
+                    &::after{
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    // Section About
+    .section-about{
+        .img-about{
+            &::after{
+                left: -50px;
+            }
+        }
+    }
+    // Section Marketing Solutions
+    .section-marketing{
+        .img-about{
+            &::after{
+                left: 50px;
+            }
+        }
+    }
+    // Section Contact
+    .section-contact{
+        .head-contact{
+            .container{
+                .row{
+                    .col-md-6:last-child{
+                        border-right: 1px solid #262D39;
+                    }
+                }
+            }
+        }
+    }
+    // Media Mobile
+    @media screen and (max-width: 767px){
+        // Header
+        header{
+            transform: translateX(100%);
+            right: 0;
+        }
+    }
+}
+
+// Dir LTR
+html[dir=ltr] {
+    body{
+        direction: ltr;
+        text-align: left;
+    }
+    // Click Nav
+    .click-nav {
+        right: 0;
+        border-radius: 20px 0 0;
+    }
+    // Info Head
+    .info-head {
+        h2, h5{
+            &::after{
+                left: 0;
+            }
+        }
+    }
+    // Section View
+    .section-view{
+        .over-section{
+            ul{
+                li{
+                    &::after{
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    // Section About
+    .section-about{
+        .img-about{
+            &::after{
+                right: -50px;
+            }
+        }
+    }
+    // Section Marketing Solutions
+    .section-marketing{
+        .img-about{
+            &::after{
+                right: 50px;
+            }
+        }
+    }
+    // Section Contact
+    .section-contact{
+        .head-contact{
+            .container{
+                .row{
+                    .col-md-6:last-child{
+                        border-left: 1px solid #262D39;
+                    }
+                }
+            }
+        }
+    }
+    // Media Mobile
+    @media screen and (max-width: 767px){
+        // Header
+        header{
+            transform: translateX(-100%);
+            left: 0;
+        }
+    }
+}
